@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap')
+        </style>
+        
+    <title>StopWatch</title>
+</head>
+<body>
+    <div class="container">
+        <video src="./vedio/background.mp4" autoplay muted loop></video>
+        <div class="parent">
+            <div class="display-timer">
+                <h1 class="show-timer">00 : 00 : 00 : 00</h1>
+            </div>
+            <div class="action">
+                <button id="startTimer" onclick="start()">Start</button>
+                <button id="pauseTimer" onclick="pause()">Pause</button>
+                <button id="resetTimer" onclick="reset()">Reset</button>
+                <button id="restartTimer" onclick="restart()">Restart</button>
+                <button id="lap" onclick="lap()">Lap</button>
+                <button id="restLap" onclick="resetlap()">Reset Laps</button>
+
+            </div>
+            <ul class="laps-list">
+                
+            </ul>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
